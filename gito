@@ -1,0 +1,1000 @@
+  993  ls
+  994  cd log
+  995  ls
+  996  cd
+  997  gedit
+  998  exit
+  999  hdfs fsck /
+ 1000  gedit API_PYTHON_HDFS
+ 1001  stop-all.sh
+ 1002  sudo init 0
+ 1003  start-all.sh
+ 1004  cd hadoop
+ 1005  cd
+ 1006  gedit
+ 1007  pwd
+ 1008  ls
+ 1009  start-all.sh
+ 1010  hdfs dfs -ls
+ 1011  hdfs dfs -ls /user/mj/
+ 1012  hdfs dfs -ls /user/mj/hdfs*
+ 1013  hdfs dfs -rm /user/mj/hdfs_test_renamed.txt
+ 1014  hadoop fs -ls /
+ 1015  stop-all.sh
+ 1016  sudo init 0
+ 1017  gedit .bashrc
+ 1018  ls -l
+ 1019  ls -la
+ 1020  git remote
+ 1021  cd PremierProjet/
+ 1022  git remote
+ 1023  cd PremierProjet/
+ 1024  git log
+ 1025  clear
+ 1026  ls
+ 1027  cd ..
+ 1028  docker info
+ 1029  docker images ls
+ 1030  docker images
+ 1031  docker ps 
+ 1032  docler container ls
+ 1033  docker container ls
+ 1034  docker run --name monServeurWeb -d -p 8092:80 httpd:latest
+ 1035  docker stop monServeurWeb
+ 1036  docker run --name monServeurWeb -d -p 8092:80 httpd:latest
+ 1037  docker ps
+ 1038  docker ps aux
+ 1039  docker rm monServeurWeb
+ 1040  docker run --name monServeurWeb -d -p 8092:80 httpd:latest
+ 1041  docker exec -ti monServeurWeb /bin/bash
+ 1042  docker logs -ft monServeurWeb
+ 1043  docker stop monServeurWeb
+ 1044  docker ps 
+ 1045  clear
+ 1046  docker run -ti --name monubuntu_1 ubuntu:latest
+ 1047  docker ps 
+ 1048  docker ps -a
+ 1049  docker commit monubuntu_1 ubuntugit
+ 1050  $ docker run -ti --name ubuntugit_container ubuntugit
+ 1051  docker run -ti --name ubuntugit_container ubuntugit
+ 1052  docker ps -l
+ 1053  docker build -t  lamp-stacj-image .
+ 1054  docker rmi lamp-stacj-image
+ 1055  docker build -t my_lampstack .
+ 1056  docker rmi my_lampstack
+ 1057  clear
+ 1058  docker run -d --name my_lampstack -p 8093:80 my_stack
+ 1059  ls
+ 1060  docker build -t my_lampstack .
+ 1061  docker image ls
+ 1062  docker build -t lampstack-image1
+ 1063  docker build -t lampstack-image1 .
+ 1064  docker image ls
+ 1065  docker run -d --name lamp_server1 -p 8080:80 lampstack_image1
+ 1066  docker image ls
+ 1067  docker rmi lampstack-image1
+ 1068  docker image ls
+ 1069  docker build -t lampstack-image1 .
+ 1070  docker run -d --name lampstack-docker -p 8092:80 lampstack-image1
+ 1071  docker stop lampstack-docker
+ 1072  docker rmi lampstack-image1
+ 1073  docker rm lampstack-docker
+ 1074  docker rmi lampstack-image1
+ 1075  docker run -d --name lampstack-docker -p 8092:80 lampstack-image1
+ 1076  docker build -t lampstack-image1 .
+ 1077  docker run -d --name lampstack-docker -p 8092:80 lampstack-image1
+ 1078  docker stop lampstack-docker
+ 1079  docker rm lampstack-docker
+ 1080  docker rmi lampstack-image1
+ 1081  docker build -t lampstack-image1 .
+ 1082  docker run -d --name lampstack-docker -p 8092:80 lampstack-image1
+ 1083  docker stop lampstack-docker
+ 1084  docker rmi lampstack-image1
+ 1085  docker rm lampstack-docker
+ 1086  docker rmi lampstack-image1
+ 1087  docker run -d --name lampstack-docker -p 8092:80 lampstack-image1
+ 1088  docker build -t lampstack-image1 .
+ 1089  docker run -d --name lampstack-docker -p 8092:80 lampstack-image1
+ 1090  docker volume create test_volume
+ 1091  docker volumes ls
+ 1092  docker volume ls
+ 1093  docker volume inspect test_volume
+ 1094  docker volume rm test_volume
+ 1095  docker volume ls
+ 1096  sudo watch -n 1 ls /var/lib/docker/volumes/data-alpinetest/_data
+ 1097  docker volume ls
+ 1098  docker volume inspect data-alpinetest
+ 1099  mkdir alpine1
+ 1100  cd alpine1
+ 1101  gedit Dockerfile
+ 1102  docker network ls
+ 1103  docker build -t alpinetest-image
+ 1104  ls
+ 1105  docker build -t alpinetest-image .
+ 1106  docker run -ti --name alpinetest-container -v data-alpinetest:/data alpinetest-image
+ 1107  docker rm -f alpinetest-container
+ 1108  docker run -ti --name alpinetest-container -v data-alpinetest:/data alpinetest-image
+ 1109  cd ..
+ 1110  ls
+ 1111  cd app_stack/
+ 1112  docker image ls
+ 1113  docker rm -f lampstack-container
+ 1114  dockerps -a
+ 1115  docker ps -a
+ 1116  docker rm -f lampstack-docker
+ 1117  docker image ls
+ 1118  docker volume inspect mysqldata
+ 1119  $ docker run -d --name lampstack-container -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8080:80 lampstack-image
+ 1120  docker run -d --name lampstack-container -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8080:80 lampstack-image
+ 1121  docker image ls
+ 1122  docker run -d --name lampstack-container -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8080:80 lampstack-image1
+ 1123  docker run -d --name lampstack-container -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8092:80 lampstack-image1
+ 1124  docker rm -f lampstack-container
+ 1125  docker run -d --name lampstack-container -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8092:80 lampstack-image1
+ 1126  docker rm -f lampstack-container
+ 1127  docker volume ls
+ 1128  echo $PWD
+ 1129  ls
+ 1130  cd application/
+ 1131  ls
+ 1132  docker rm -f lampstack-container
+ 1133  docker run -d --name lampstack-docker -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8092:80 lampstack-image1
+ 1134  docker exec -ti lampstack-docker /bin/bash
+ 1135  docker run -d --name lampstack-docker -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8092:80 lampstack-image1
+ 1136  docker exec -ti lampstack-docker /bin/bash
+ 1137  docker rm -f lampstack-docker
+ 1138  docker rm -f lampstack-container
+ 1139  docker run -d -ti  --name lampstack-docker -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8092:80 lampstack-image1
+ 1140  docker exec -ti lampstack-docker /bin/bash
+ 1141  docker ps -a
+ 1142  cd
+ 1143  [200~/Desktop/UIC_24_25/DEvops_UIC/Atelier/Docker_dockerfile/app_stack/application
+ 1144  cd
+ 1145  cd /var/lib/docker/volumes
+ 1146  sudo  /var/lib/docker/volumes
+ 1147  sudo cd /var/lib/docker/volumes
+ 1148  cd /var/lib
+ 1149  ls7
+ 1150  ls
+ 1151  cd docker/
+ 1152  sudo cd docker/
+ 1153  su -
+ 1154  docker volume ls
+ 1155  exit
+ 1156  docker build -t lampstack_imageV2 .
+ 1157  docker build -t lampstack-image2 .
+ 1158  docker rmi lampstack-image2
+ 1159  docker build -t lampstack-image2 .
+ 1160  docker volume create --name mysqldata
+ 1161  ls
+ 1162  docker run -d --name my_lamp_c -v $PWD/app:/var/www/html -v mysqldata:/var/lib/mysql -p 8095:80 my_lamp
+ 1163  docker run -d --name lampstack-docker2 -v $PWD/app:/var/www/html -v mysqldata:/var/lib/mysql -p 8095:80 lampstack-image2
+ 1164  docker exec -ti lampstack-docker2 /bin/bash
+ 1165  exit
+ 1166  ls
+ 1167  docker rmi lampstack-image1
+ 1168  docker rm -f lampstack-docker
+ 1169  docker rm -f lampstack-container
+ 1170  docker image ls
+ 1171  docker rmi lampstack-image1
+ 1172  docker build -t lampstack-image1 .
+ 1173  ls
+ 1174  docker run -d --name lampstack-docker -v $PWD/application:/var/www/html -v mysqldata:/var/lib/mysql -p 8092:80 lampstack-image1
+ 1175  ls 
+ 1176  cd application/
+ 1177  ls
+ 1178  docker rm -f lampstack-container
+ 1179  docker rmi lampstack-image1
+ 1180  docker rm -f lampstack-docker
+ 1181  docker rm -f lampstack-container
+ 1182  docker rmi lampstack-image1
+ 1183  docker build -t lampstack-image1 .
+ 1184  cd ..
+ 1185  ls
+ 1186  docker build -t lampstack-image1 .
+ 1187  docker run -d --name lampstack-docker  -p 8092:80 lampstack-image1
+ 1188  cd
+ 1189  ebook-convert master_github_actions.epub -o master_GITHUB
+ 1190  ebook-convert master_github_actions.epub  -o master_GITHUB.pdf
+ 1191  ebook-convert master_github_actions.epub  master_GITHUB.pdf
+ 1192  id
+ 1193  history >>maji145d
+ 1194  gedit maji145d 
+ 1195  who
+ 1196  env
+ 1197  docker ps 
+ 1198  docker ps -a
+ 1199  docker ps -q
+ 1200  docker ps -q -i
+ 1201  docker ps -q --all
+ 1202  docker ps -q --all -l
+ 1203  docker ps -q --all --latest
+ 1204  python 01_autotest.py -v
+ 1205  python3 01_autotest.py -v
+ 1206  python3 02_autotest.py -v
+ 1207  gedit
+ 1208  sudo init 0
+ 1209  cp /home/mj/NetBeansProjects/student_app/target/student_app-v1.war .
+ 1210  cd
+ 1211  gedit file_to_sort.txt
+ 1212  sort file_to_sort.txt 
+ 1213  cd /home/mj/NetBeansProjects/student_app/target/
+ 1214  ls
+ 1215  gedit
+ 1216  gedit node10102023
+ 1217  gedit node10102024
+ 1218  diff node10102023 node10102024
+ 1219  diff -u node10102023 node10102024
+ 1220  diff -u 20161001 20171001 > diff_output.txt
+ 1221  diff -u node10102023 node10102024 > diff_output.txt
+ 1222  grep '^+' diff_output.txt | grep -v '^+++' > machines_ajoutees.txt
+ 1223  gedit machines_ajoutees.txt 
+ 1224  gedit fruits.txt
+ 1225  grep "orange" fruits.txt
+ 1226  grep "pomme" fruits.txt
+ 1227  grep -v 'pomme' fruits.txt
+ 1228  gedit fichier1 fichier2
+ 1229  diff fichier1 fichier2
+ 1230  diff -u fichier1.txt fichier2.txt
+ 1231  diff -u fichier1 fichier2
+ 1232  gedit filesort
+ 1233  sort filesort
+ 1234  sort -n filesort
+ 1235  man sort
+ 1236  sort -n -u filesort
+ 1237  gedit filesort
+ 1238  sort filesort
+ 1239  sort -n -u filesort
+ 1240  time sort cpusecnodes > cpusecnodes.test
+ 1241  cat cpusecnodes.test 
+ 1242  time sort cpusecnodes > cpusecnodes.test
+ 1243  time sort cpusecnodes.test 
+ 1244  time sort cpusecnodes > cpusecnodes.test
+ 1245  gedit
+ 1246  cat fruits.txt 
+ 1247  [200~cut -c 1-3 fruits.txt
+ 1248  app
+ 1249  cut -c 1-3 fruits.txt
+ 1250  gedit beatles.txt
+ 1251  cat beatles.txt 
+ 1252  cut -f2 -d: beatles.txt
+ 1253  cut 1 beatles.txt 
+ 1254  cut -c 1 beatles.txt 
+ 1255  cut -c 1-2 beatles.txt 
+ 1256  cut -f 1,2,4 personne.txt
+ 1257  cut -f 1,2,4 personne.txt|tail -n2
+ 1258  cut -f 1,2,4 personne.txt|tail -n 2
+ 1259  cut -f 1,2,4 personne.txt|tail +2
+ 1260  touch personne.txt 
+ 1261  echo "Bonjour\nComment ça va ?\tJe suis heureux de te voir"
+ 1262  echo "Bonjour\n Comment ça va ?\tJe suis heureux de te voir"
+ 1263  echo "Bonjour \n Comment ça va ?\tJe suis heureux de te voir"
+ 1264  clear
+ 1265  echo "Bonjour\nComment ça va ?\tJe suis heureux de te voir"
+ 1266  echo "Bonjour\\nComment ça va ?\tJe suis heureux de te voir"
+ 1267  echo -e "Bonjour\nComment ça va ?\tJe suis heureux de te voir"
+ 1268  echo -e "Bonjour\nComment ça va ?\t \bJe suis heureux de te voir"
+ 1269  echo -e "Bonjour\nComment ça va ?\tJe suis heureux de te voir"
+ 1270  echo -e 'Ceci est une phrase \n écrite sur deux lignes.'
+ 1271  echo 'Ceci est une phrase \n écrite sur une seule ligne.'
+ 1272  echo 'Ceci est une phrase écrite sur une seule ligne.'
+ 1273  cd ..
+ 1274  cd diff
+ 1275  hstory > diff_node
+ 1276  hstory > diffnode
+ 1277  history > diff_node
+ 1278  gedit diff_node 
+ 1279  cd grep
+ 1280  ls
+ 1281  cd dIFF/
+ 1282  ls
+ 1283  grep -v 'pomme' fruits.txt
+ 1284  grep +v 'pomme' fruits.txt
+ 1285  grep -v 'pomme' fruits.txt
+ 1286  gedit
+ 1287  date --date='2 days ago
+ 1288  '
+ 1289  date +%s
+ 1290  df
+ 1291  df -h
+ 1292  du /home
+ 1293  du -h --max-depth=1 /home  
+ 1294  du -h --max-depth=1 /home/mj/
+ 1295  gedit
+ 1296  python3 01_autotest.py 
+ 1297  python3
+ 1298  sudo init 0
+ 1299  sudo apt-get update
+ 1300  which hadoop
+ 1301  jps
+ 1302  gedit
+ 1303  start-all.sh
+ 1304  hdfs dfs -mkdir /input
+ 1305  hdfs dfs -put $HADOOP_HOME/etc/hadoop/*.xml /input
+ 1306  $ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /input /output
+ 1307  hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /input /output
+ 1308  hdfs dfs -ls /output
+ 1309  hdfs dfs -cat /outputquoran
+ 1310  hdfs dfs -put /home/mj/Downloads/quran-simple.txt /inputquoran
+ 1311  hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /inputquoran outputquoran
+ 1312  hdfs dfs -cat /outputquran/part-r-00000
+ 1313  $ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /inputquran /resultat
+ 1314  hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /inputquran /resultat
+ 1315  hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/hadoop-mapreduce-examples-*.jar wordcount /inputquoran /resultat
+ 1316  hdfs dfs -ls /resultat
+ 1317  hdfs dfs -cat /resultat/part-r-00000
+ 1318  stop-all.sh
+ 1319  sudo init 0
+ 1320  gedit toList2semOcto
+ 1321  start-all.sh
+ 1322  hdfs fs -ls /
+ 1323  hdfs dfs -ls /
+ 1324  hdfs dfs -ls /user/
+ 1325  gedit .bashrc
+ 1326  docker volumes
+ 1327  docker volume 
+ 1328  gedit
+ 1329  gedit procedure
+ 1330  gedit docker-compose.yml
+ 1331  ls
+ 1332  docker compose up -d
+ 1333  ls
+ 1334  docker compose up
+ 1335  docker images ls
+ 1336  docker image ls
+ 1337  docker ps -q
+ 1338  docker ps -q -a
+ 1339  docker ps 
+ 1340  docker-compose down
+ 1341  docker compose stop
+ 1342  docker compose version
+ 1343  sudo apt-get install docker-compose-plugin
+ 1344  docker compose -version
+ 1345  docker compose --version
+ 1346  docker compose version
+ 1347  sudo init 0
+ 1348  gedit Dockerfile with docker compose
+ 1349  docker compose stop
+ 1350  sudo init 0
+ 1351  gedit Procedure
+ 1352  cd ..
+ 1353  ls
+ 1354  docker-compose up --build
+ 1355  docker compose -version
+ 1356  docker compose version
+ 1357  docker compose up --build
+ 1358  gedit docker-compose.yml
+ 1359  docker compose up
+ 1360  docker compose ps 
+ 1361  python3
+ 1362  gedit
+ 1363  sudo init 0
+ 1364  man ls
+ 1365  sort file_to_sort.txt 
+ 1366  sort -n file_to_sort.txt 
+ 1367  sort -u file_to_sort.txt 
+ 1368  sort -n -r file_to_sort.txt 
+ 1369  sort -u file_to_sort.txt
+ 1370  sort -u -n file_to_sort.txt
+ 1371  grep 'pomme' fruits.txt
+ 1372  grep 'pomme' fruits
+ 1373  df
+ 1374  wget https://archive.org/download/ulysses04300gut/ulyss10.txt  
+ 1375  ls
+ 1376  `wget https://archive.org/download/ulysses04300gut/ulyss10.txt`  ls -lh ulyss10.txt 
+ 1377  ls -h ulyss10.txt 
+ 1378  ls -lh ulyss10.txt 
+ 1379  date --date='7 days ago'
+ 1380  df -u
+ 1381  h
+ 1382  nano script.sh
+ 1383  chmod u+x script.sh 
+ 1384  ./script.sh 
+ 1385  gedit script.sh 
+ 1386  gedit scriptIf
+ 1387  mv scriptIf scriptIf.sh
+ 1388  ls
+ 1389  chmod u+x scriptIf.sh 
+ 1390  ./scriptIf.sh 
+ 1391  for i in {1..5}; do echo "Hi, $i"; done
+ 1392  wich fichier1
+ 1393  which fichier1
+ 1394  which ls
+ 1395  wheris fichier1
+ 1396  whereis fichier1
+ 1397  whereis fichier1|pwd
+ 1398  which showq
+ 1399  which java
+ 1400  which python
+ 1401  which python3
+ 1402  which df
+ 1403  $path
+ 1404  £PATH
+ 1405  $PATH
+ 1406  df -T -t ext4
+ 1407  file /usr/bin/du
+ 1408  du
+ 1409  du -h
+ 1410  file /usr/bin/du
+ 1411  file /usr/bin/python3
+ 1412  which bash
+ 1413  gedit
+ 1414  mkdir ttt122
+ 1415  cd ttt122/
+ 1416  wget https://archive.org/download/ulysses04300gut/ulyss10.txt  
+ 1417  wget -O sales.csv https://gist.githubusercontent.com/denandreychuk/b9aa812f10e4b60368cff69c6384a210/raw/d24f715d9350d674b0b1bf494d82ccdf81de0647/100%2520Sales%2520Records.csv
+ 1418  exit
+ 1419  pip3 install pandas
+ 1420  gedit 
+ 1421  pwd
+ 1422  jps
+ 1423  start-all.sh
+ 1424  hdfs dfs -put transactions.csv /user/mj/transactions.csv
+ 1425  hdfs dfs -rm transactions.csv 
+ 1426  hdfs dfs -put transactions.csv /user/mj/transactions.csv
+ 1427  hadoop com.sun.tools.javac.Main Traitement*.java
+ 1428  clear
+ 1429  jar cfe Traitement.jar TraitementDriver Traitement*.class
+ 1430  yarn jar Traitement.jar /user/hadoop/transactions.csv /user/hadoop/sortie
+ 1431  yarn jar Traitement.jar /user/mj/transactions.csv /user/mj/sortie_chiffre_affaire
+ 1432  hdfs dfs -cat /user/mj/sortie_chiffre_affaire/part-r-00000
+ 1433  wc -l transactions.csv 
+ 1434  exit
+ 1435  hadoop com.sun.tools.javac.Main Traitement*.java
+ 1436  start-all.sh
+ 1437  jps
+ 1438  hadoop version
+ 1439  gedit
+ 1440  gedit installation
+ 1441  wget https://archive.apache.org/dist/hive/hive-3.1.2/apache-hive-3.1.2-bin.tar.gz
+ 1442  mkdir ecobigdata
+ 1443  cd ecobigdata/
+ 1444  mkdir vv && cd
+ 1445  mkdir vv1 && cd .
+ 1446  cd ecobigdata/
+ 1447  ls
+ 1448  tar -xzvf apache-hive-3.1.2-bin.tar.gz
+ 1449  mv apache-hive-3.1.2-bin hive
+ 1450  ls
+ 1451  rm apache-hive-3.1.2-bin.tar.gz 
+ 1452  ls
+ 1453  cd hive
+ 1454  ls
+ 1455  cd lib
+ 1456  ls
+ 1457  gedit $HIVE_HOME/conf/hive-site.xml
+ 1458  cd ..
+ 1459  $HIVE_HOME/conf/hive-site.xml
+ 1460  cd
+ 1461  gedit  ~/.bashrc 
+ 1462  source ~/.bashrc
+ 1463  cd 
+ 1464  source .bashrc
+ 1465  ls
+ 1466  echo $HIVE_HOME 
+ 1467  gedit $HIVE_HOME/conf/hive-site.xml
+ 1468  history > merdomys
+ 1469  gedit merdomys 
+ 1470  mysql - admin -p 
+ 1471  mysql -u admin
+ 1472  mysql -u admin -p 
+ 1473  mysql -u root -p 
+ 1474  sudo init 0
+ 1475  pwd
+ 1476  cd
+ 1477  hive
+ 1478  schematool -initSchema -dbType mysql
+ 1479  wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.33.tar.gz
+ 1480  wget https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar
+ 1481  cp mysql-connector-j-8.0.33.jar $HIVE_HOME/lib/
+ 1482  rm mysql-connector-j-8.0.33.jar 
+ 1483  schematool -initSchema -dbType mysql
+ 1484  start-all.sh
+ 1485  hive
+ 1486  hadoop fs -mkdir /tmp 
+ 1487  hadoop fs -mkdir /user/hive/warehouse
+ 1488  hdfs dfs -mkdir /tmp
+ 1489  hdfs dfs -mkdir -p /user/hive/warehouse
+ 1490  hdfs dfs -chmod g+w /tmp 
+ 1491  hdfs dfs -chmod g+w /user/hive/warehouse
+ 1492  hive
+ 1493  export HADOOP_USER_CLASSPATH_FIRST=true
+ 1494  hive
+ 1495  hive --version
+ 1496  java -version
+ 1497  hive
+ 1498  echo $HADOOP_OPTS
+ 1499  hive
+ 1500  sudo hive
+ 1501  cd ecobigdata/hive/
+ 1502  bin/hive
+ 1503  hive
+ 1504  cd
+ 1505  hive
+ 1506  bin/beeline -n mj -u jdbc:hive2://localhost:10000
+ 1507  bin/beeline
+ 1508  hive
+ 1509  bin/beeline -n hiveuser -u jdbc:hive2://localhost:10000
+ 1510  bin/beeline -n hiveuser -p Admin@2024 -u jdbc:hive2://localhost:10000
+ 1511  sudo bin/beeline -n hiveuser -p Admin@2024 -u jdbc:hive2://localhost:10000
+ 1512  bin/beeline -n admin -p admin -u jdbc:hive2://localhost:10000
+ 1513  bin/beeline -n admin -p admin -u jdbc:hive2://master:10000
+ 1514  hive
+ 1515  bin/hiveserver2
+ 1516  sudo bin/hiveserver2 
+ 1517  bin/hiveserver2
+ 1518  hive
+ 1519  rm $HIVE_HOME/lib/guava-19.0.jar
+ 1520  cd
+ 1521  rm $HIVE_HOME/lib/guava-19.0.jar
+ 1522  hive
+ 1523  ls $HADOOP_HOME/share/hadoop/common/lib | grep guava
+ 1524  ls $HIVE_HOME/lib | grep guava
+ 1525  rm \$HIVE_HOME/lib/guava-22.0.jar 
+ 1526  rm $HIVE_HOME/lib/guava-22.0.jar
+ 1527  cp $HADOOP_HOME/share/hadoop/common/lib/guava-27.0-jre.jar $HIVE_HOME/lib/
+ 1528  jps
+ 1529  start-all.sh
+ 1530  jps
+ 1531  hive
+ 1532  bin/beeline -n db_user -u jdbc:hive2://localhost:10000
+ 1533  cd ecobigdata/
+ 1534  cd hive
+ 1535  bin/beeline -n db_user -u jdbc:hive2://localhost:10000
+ 1536  bin/beeline -n hiveuser -u jdbc:hive2://localhost:10000
+ 1537  bin/hiveserver2
+ 1538  hive
+ 1539  schematool -dbType mysql -initSchema
+ 1540  hive
+ 1541  cd
+ 1542  hive
+ 1543  hive --service hiverserver2 &
+ 1544  hive --service hiveserver2 &
+ 1545  gedit .bashrc 
+ 1546  schematool -initSchema -dbType mysql
+ 1547  wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.33.tar.gz
+ 1548  wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.4.0.tar.gz
+ 1549  wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar
+ 1550  tar -xzvf mysql-connector-java-8.0.22.tar.gz
+ 1551  tar -xzvf mysql-connector-java-8.0.2
+ 1552  mkdir connector
+ 1553  cd connector/
+ 1554  wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.22/mysql-connector-java-8.0.22.jar
+ 1555  ls
+ 1556  cp mysql-connector-java-8.0.22.jar $HIVE_HOME/lib/
+ 1557  schematool -initSchema -dbType mysql
+ 1558  cd
+ 1559  hiveserver2
+ 1560  mysql -u hiveuser -p
+ 1561  mysql -u hiveuser -p Admin@2024
+ 1562  mysql -u hiveuser -p 
+ 1563  hadoop fs -chmod g+w /user/hive/warehouse
+ 1564  hadoop fs -chmod -R g+w /user/hive/warehouse/
+ 1565  bin/hiveserver2
+ 1566  bin/hiveserver2
+ 1567  cd ecobigdata/
+ 1568  cd hive/
+ 1569  bin/hiveserver2
+ 1570  $HIVE_HOME/bin/hive --service metastore &
+ 1571  $HIVE_HOME/bin/hive --service hiveserver2 &
+ 1572  
+ 1573  stop-all.sh
+ 1574  gedit
+ 1575  ls $HADOOP_HOME/share/hadoop/common/lib | grep guava
+ 1576  guava-27.0-jre.jar
+ 1577  ls $HIVE_HOME/lib | grep guava
+ 1578  rm $HIVE_HOME/lib/guava-19.0.jar
+ 1579  cp $HADOOP_HOME/share/hadoop/common/lib/guava-27.0-jre.jar $HIVE_HOME/lib/
+ 1580  start-all.sh
+ 1581  hive
+ 1582  stop-all.sh
+ 1583  start-all.sh
+ 1584  beeline -u hiveuser  "jdbc:hive2://localhost:10000"
+ 1585  beeline -u hiveuser -p Admin@2024 "jdbc:hive2://localhost:10000"
+ 1586  sudo beeline -u "jdbc:hive2://localhost:10000"
+ 1587  beeline -u "jdbc:hive2://localhost:10000" -n hiveuser -p Admin@2024
+ 1588  beeline -u "jdbc:hive2://master:10000" -n hiveuser -p Admin@2024
+ 1589  $HIVE_HOME/bin/init-hive-dfs.sh
+ 1590  beeline -u "jdbc:hive2://master:10000" -n hiveuser -p Admin@2024
+ 1591  beeline -u hiveuser -p Admin@2024 "jdbc:hive2://localhost:10000"
+ 1592  beeline -u "jdbc:hive2://localhost:10000" -n hiveuser -p Admin@2024
+ 1593  $HIVE_HOME/bin/hive --service metastore &
+ 1594  gedit
+ 1595  start-all.sh
+ 1596  $HIVE_HOME/bin/schematool -dbType mysql -initSchema
+ 1597  clear
+ 1598  cd
+ 1599  $HIVE_HOME/bin/hive --service metastore &
+ 1600  $HIVE_HOME/bin/hive --service hiveserver2 &
+ 1601  ps -q
+ 1602  ps aux
+ 1603  clear
+ 1604  beeline -u jdbc:hive2://localhost:10000
+ 1605  gedit /etc/systemd/system/hive.service
+ 1606  sudo gedit /etc/systemd/system/hive.service
+ 1607  beeline -n admin -p admin -u jdbc:hive2://localhost:10000
+ 1608  beeline -n admin -p admin -u jdbc:hiveserver2://localhost:10000
+ 1609  beeline -n admin -p admin -u jdbc:mysql://localhost:10000
+ 1610  beeline -n admin -p admin -u jdbc:mysql://localhost:3306
+ 1611  beeline -n admin -p admin -u jdbc:hive://localhost:10000
+ 1612  beeline -n admin -p admin -u thrift:hive2://localhost:10000
+ 1613  beeline  jdbc:hive2://localhost:10000
+ 1614  beeline  jdbc:hive2://localhost:10000 -u admin -p admin
+ 1615  beeline  jdbc:hive2://localhost:10000 -n admin -p admin
+ 1616  beeline  -n jdbc:hive2://localhost:10000 -n admin -p admin
+ 1617  beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1618  beeline -u "jdbc:hive2://localhost:10000"
+ 1619  beeline -u "jdbc:hive2://localhost:10000" -n mj -p alpa
+ 1620  beeline
+ 1621  beeline -u jdbc:hive2://127.0.1.1:10000/default
+ 1622  beeline -u jdbc:hive2://master:10000/default
+ 1623  cd
+ 1624  sudo hive --service hiveserver2
+ 1625  hive --service hiveserver2
+ 1626  hive --service hiveserver2 stop
+ 1627  hive --service hiveserver2
+ 1628  beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1629  hive
+ 1630  sudo hiveserver2
+ 1631  hiveserver2
+ 1632  kill -9 57881
+ 1633  hiveserver2
+ 1634  hive --service hiveserver2
+ 1635  kill -9 46475
+ 1636  bin/beeline -n admin -u jdbc:hive2://localhost:10000
+ 1637  cd bin
+ 1638  sudo beeline -n admin -u jdbc:hive2://localhost:10000
+ 1639  beeline jdbc:hive2://localhost:10000
+ 1640  sudo beeline -n mj -u jdbc:hive2://localhost:10000
+ 1641  beeline -n mj -u jdbc:hive2://localhost:10000
+ 1642  beeline -u jdbc:hive2://localhost:10000 -n admin -p admin
+ 1643  lsof -i -P |grep java
+ 1644  beeline -u jdbc:hive2://localhost:10000
+ 1645  beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1646  hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=INFO,console
+ 1647  kill -9 54660
+ 1648  hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=INFO,console
+ 1649  HADOOP_OPTS="$HADOOP_OPTS --add-opens java.base/java.net=ALL-UNNAMED" hive --service hiveserver2 --hiveconf hive.server2.thrift.port=10000 --hiveconf hive.root.logger=INFO,console
+ 1650  $HIVE_HOME/bin/hive --service hiveserver2 &
+ 1651  $HIVE_HOME/bin/hive --service metastore
+ 1652  wget https://downloads.apache.org/hive/hive-4.0.0/apache-hive-4.0.0-bin.tar.gz
+ 1653  wget https://downloads.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz
+ 1654  stop-all.sh
+ 1655  jps
+ 1656  cd ..
+ 1657  hive
+ 1658  jps
+ 1659  $HIVE_HOME/bin/hive --service metastore &
+ 1660  $HIVE_HOME/bin/hive --service hiveserver2 &
+ 1661  netstat -ntulp | grep '
+ 1662  ,
+ 1663  ;
+ 1664  chmod -R 777 /tmp
+ 1665  chmod -R 750 ecobigdata/hive/*
+ 1666  chown -R mj:mj ecobigdata/hive/
+ 1667  hive
+ 1668  su -
+ 1669  gedit .bashrc 
+ 1670  hive
+ 1671  clear
+ 1672  netstat -tuln | grep 10000
+ 1673  ss -tuln | grep 10000
+ 1674  gedit  $HIVE_HOME/logs/hiveserver2.log
+ 1675  stop-all.sh
+ 1676  start-all.sh
+ 1677  jps
+ 1678  cd
+ 1679  jps
+ 1680  start-all.sh
+ 1681  jps
+ 1682  $HADOOP_HOME/sbin/start-dfs.sh
+ 1683  jps
+ 1684  stop-all.sh
+ 1685  chmod -R 777 /home/mj/hadoop/tmp/
+ 1686  start-all.sh
+ 1687  jps
+ 1688  jps
+ 1689  start-all.sh
+ 1690  jps
+ 1691  gedit /tmp/hadoop-mj-resourcemanager.pid
+ 1692  hdfs namenode -format
+ 1693  jps
+ 1694  hdfs namenode -format
+ 1695  start-all.sh
+ 1696  kill -9 110850
+ 1697  jps
+ 1698  $HADOOP_HOME/sbin/start-dfs.sh
+ 1699  $HADOOP_HOME/sbin/stop-dfs.sh 
+ 1700  $HADOOP_HOME/sbin/stop-yarn.sh 
+ 1701  hdfs namenode -format
+ 1702  jps
+ 1703  $HADOOP_HOME/sbin/start-dfs.sh
+ 1704  jps
+ 1705  bin/beeline  -u jdbc:hive2://localhost:10000
+ 1706  beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1707  sudo bin/beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1708  beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1709  netstat -ntulp | grep '10000'
+ 1710  beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1711  sudo beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1712  hdfs dfs -rm -r /user/hive
+ 1713  hdfs dfs -ls /user/
+ 1714  cd ecobigdata/
+ 1715  wget https://dlcdn.apache.org/hive/hive-4.0.1/apache-hive-4.0.1-bin.tar.gz
+ 1716  tar xzf apache-hive-4.0.1-bin.tar.gz apache-hive-4.0.1-bin/
+ 1717  ls
+ 1718  ls -ail
+ 1719  mv apache-hive-4.0.1-bin hive
+ 1720  cd hive
+ 1721  cd lib
+ 1722  rm /home/mj/ecobigdata/hive/lib/log4j-slf4j-impl-2.18.0.jar
+ 1723  hdfs dfs -mkdir -p /user/hive/warehouse
+ 1724  hdfs dfs -mkdir -p /tmp/hive
+ 1725  hdfs dfs -chmod 777 /tmp/
+ 1726  hdfs dfs -chmod 777 /user/hive/warehouse
+ 1727  hdfs dfs -chmod 777 /tmp/hive
+ 1728  cd ..
+ 1729  cd conf
+ 1730  cp hive-default.xml.template hive-site.xml
+ 1731  cd ..
+ 1732  cd hive
+ 1733  cd lib
+ 1734  cp $HADOOP_HOME/share/hadoop/common/lib/guava* $HIVE_HOME/lib/
+ 1735  cd ..
+ 1736  schematool -dbType mysql -initSchema
+ 1737  hive -e "show tables"
+ 1738  hdfs dfs -mkdir -p /usr/hive/warehouse
+ 1739  hdfs dfs -chmod g+w /usr/hive/warehouse
+ 1740  hive -e "show tables"
+ 1741  hive "show tables"
+ 1742  bin/hiveserver2
+ 1743  hive
+ 1744  beeline -u "jdbc:hive2://localhost:10000" -n hiveuser -p Admin@2024
+ 1745  cd 
+ 1746  jps
+ 1747  start-all.sh
+ 1748  stop-all.sh
+ 1749  start-all.sh
+ 1750  $HIVE_HOME/bin/hive --service metastore &
+ 1751  $HIVE_HOME/bin/hive --service hiveserver2 &
+ 1752  beeline -u "jdbc:hive2://localhost:10000" -n hiveuser -p Admin@2024
+ 1753  start-all.sh
+ 1754  jps
+ 1755  start-all.sh
+ 1756  jps
+ 1757  start-all.sh
+ 1758  jps
+ 1759  hdfs dfs -mkdir /user
+ 1760  hdfs dfs -mkdir /user/mj
+ 1761  jps
+ 1762  start-all.sh
+ 1763  hdfs dfs -mkdir /user/hive/warehouse~
+ 1764  hdfs dfs -mkdir /user/hive/warehouse
+ 1765  hdfs dfs -rm /user/hive/warehouse~
+ 1766  hdfs dfs -rmdir /user/hive/warehouse~
+ 1767  beeline -n admin -u jdbc:hive2://localhost:10000
+ 1768  beeline -n admin -p -u jdbc:hive2://localhost:10000
+ 1769  beeline -n mj -p -u jdbc:hive2://localhost:10000
+ 1770  beeline -u jdbc:hive2://master:10000
+ 1771  beeline -u thrift:hive2://master:10000
+ 1772  beeline -n admin -p -u jdbc:hive2://localhost:10000
+ 1773  beelin -u jdbc:hive2://localhost:10000
+ 1774  beeline
+ 1775  hive
+ 1776  gedit gedit $HIVE_HOME/logs/hiveserver2.log
+ 1777  gedit $HIVE_HOME/logs/hiveserver2.log
+ 1778  sudo gedit /etc/systemd/system/hiveserver2.service
+ 1779  jps
+ 1780  netstat -tuln | grep 10000
+ 1781  sudo netstat -tuln | grep 10000
+ 1782  sudo systemctl enable hiveserver2
+ 1783  sudo systemctl start hiveserver2
+ 1784  journalctl -xeu hiveserver2.service
+ 1785  sudo service hiveserver2 start
+ 1786  systemctl status hiveserver2.service
+ 1787  echo $JAVA_HOME 
+ 1788  sudo systemctl daemon-reload
+ 1789  cd ecobigdata/
+ 1790  cd hiv
+ 1791  cd hive
+ 1792  bin/hiveserver2 start
+ 1793  hive -e "show tables"
+ 1794  hive  "show tables"
+ 1795  hive
+ 1796  beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1797  cd
+ 1798  cd ecobigdata/
+ 1799  cd hive/
+ 1800  bin/hiveserver2 &
+ 1801  jps
+ 1802  cd
+ 1803  cd ecobigdata/
+ 1804  cd hive/
+ 1805  bin/beeline -u "jdbc:hive2://localhost:10000" -n admin -p admin
+ 1806  beeline 
+ 1807  cd
+ 1808  cd ecobigdata/hive/bin/hiveserver2 &
+ 1809  cd ecobigdata/hive/bin/hiveserver2
+ 1810  cd ecobigdata/hive/bin/
+ 1811  ./hiveserver2 start
+ 1812  kill -9 46489
+ 1813  ./hiveserver2 start
+ 1814  ./hiveserver2
+ 1815  hive
+ 1816  cd
+ 1817  cd ecobigdata/
+ 1818  wget https://dlcdn.apache.org/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz
+ 1819  wget https://archive.apache.org/dist/hive/hive-3.1.3/apache-hive-3.1.3-bin.tar.gz 
+ 1820  tar -xzf apache-hive-3.1.3-bin.tar.gz
+ 1821  sudo mv apache-hive-3.1.3-bin hive
+ 1822  cd hive/
+ 1823  cd conf
+ 1824  cp hive-default.xml.template hive-site.xml
+ 1825  gedit
+ 1826  gedit hive-site.xml 
+ 1827  wget https://repo1.maven.org/maven2/mysql/mysql-connector-java/8.0.30/mysql-connector-java-8.0.30.jar
+ 1828  cp mysql-connector-java-8.0.30.jar $HIVE_HOME/lib/mysql-connector-java-8.0.30.jar
+ 1829  schematool -dbType mysql -initSchema
+ 1830  cd
+ 1831  cd hadoop/
+ 1832  cd etc
+ 1833  cd hadoop/
+ 1834  cp core-site.xml /home/ecobigdata/hive/conf/core-site.xml
+ 1835  ls
+ 1836  cp core-site.xml /home/ecobigdata/hive/conf/
+ 1837  cp core-site.xml /home/mj/ecobigdata/hive/conf/core-site.xml
+ 1838  cp hdfs-site.xml /home/mj/ecobigdata/hive/conf/hdfs-site.xml
+ 1839  cp yarn-site.xml /home/mj/ecobigdata/hive/conf/yarn-site.xml
+ 1840  cd
+ 1841  hive --service metastore &
+ 1842  sudo lsof -i :9083
+ 1843  kill -9 44633
+ 1844  hive --service metastore &
+ 1845  sudo lsof -i :9083
+ 1846  kill -9 58058
+ 1847  sudo lsof -i :9083
+ 1848  hive --service metastore &
+ 1849  hiveserver2 
+ 1850  hive
+ 1851  echo $JAVA_HOME 
+ 1852  hive
+ 1853  beeline
+ 1854  beeline -u jdbc:hive2://localhost:10013/default mj alpa
+ 1855  cd ecobigdata/hive
+ 1856  bin/hive
+ 1857  bin/hive -e "show tables;"
+ 1858  jps
+ 1859  hdfs dfs -ls /
+ 1860  stop-all.sh
+ 1861  sudo lsof 
+ 1862  hdfs dfs -put transactions.csv /user/mj/transactions.csv
+ 1863  sudo nano /etc/hosts
+ 1864  sudo gedit /etc/hosts
+ 1865  ping master
+ 1866  jps
+ 1867  stop-all.sh
+ 1868  jps
+ 1869  start-all.sh
+ 1870  jps
+ 1871  ls
+ 1872  cat sample.pig 
+ 1873  pig -x mapreduce sample.pig
+ 1874  gedit /etc/hosts
+ 1875  stop-all.sh
+ 1876  start-all.sh
+ 1877  stop-all.sh
+ 1878  hdfs namenode -format
+ 1879  start-hdfs.sh
+ 1880  start-dfs.sh
+ 1881  jps
+ 1882  hdfs dfs -mkdir -p /user/mj
+ 1883  hdfs -put data.txt .
+ 1884  hdfs -put data.txt /user/mj/
+ 1885  hdfs dfs -put data.txt /user/mj/
+ 1886  start-all.sh
+ 1887  hdfs dfs -put data.txt /user/mj/
+ 1888  hdfs dfs -rm data.txt /user/mj/data.txt
+ 1889  hdfs dfs -put data.txt /user/mj/.
+ 1890  hdfs dfs -rm /user/mj/data.txt
+ 1891  hdfs dfs -put data.txt /user/mj/.
+ 1892  ls
+ 1893  gedit sample.pig
+ 1894  hdfs dfs -rm /user/mj/data.txt
+ 1895  pig -x mapreduce sample.pig
+ 1896  gedit pig_1728893185706.log
+ 1897  start-all.sh
+ 1898  jps
+ 1899  pig -x mapreduce sample.pig
+ 1900  hdfs dfs -put data.txt /user/mj/.
+ 1901  pig -x mapreduce sample.pig
+ 1902  cd /tmp
+ 1903  ls
+ 1904  sudo mkdir -p /tmp/hadoop-tmp
+ 1905  sudo chown -R $USER:$USER /tmp/hadoop-tmp
+ 1906  jps
+ 1907  stop-all.sh
+ 1908  jps
+ 1909  hdfs namenode -format
+ 1910  cd
+ 1911  hdfs namenode -format
+ 1912  start-all.sh
+ 1913  jps
+ 1914  hdfs dfs -mkdir /user
+ 1915  hdfs dfs -mkdir /user/mj
+ 1916  cd ecobigdata/
+ 1917  cd pig/
+ 1918  ./pig -x mapreduce
+ 1919  ls
+ 1920  cd bin
+ 1921  ./pig -x mapreduce
+ 1922  pig -version
+ 1923  pig
+ 1924  cd
+ 1925  gedit data.txt
+ 1926  pig
+ 1927  stop-all.sh
+ 1928  start-all.sh
+ 1929  jps
+ 1930  stop-all.sh
+ 1931  start-all.sh
+ 1932  jps
+ 1933  stop-all.sh
+ 1934  jps
+ 1935  start-all.sh
+ 1936  jps
+ 1937  stop-all.sh
+ 1938  sudo systemctl stop hiveserver2
+ 1939  sudo systemctl disable hiveserver2
+ 1940  sudo rm /etc/systemd/system/hiveserver2.service 
+ 1941  sudo rm /lib/systemd/system/hiveserver2.service
+ 1942  sudo systemctl daemon-reload
+ 1943  sudo rm -rf /usr/local/hive
+ 1944  hdfs dfs -put data.txt .
+ 1945  gedit sample.pig 
+ 1946  pig -x mapreduce sample.pig
+ 1947  cd
+ 1948  source .bashrc
+ 1949  gedit changement
+ 1950  history>lundi_14Oct
+ 1951  gedit lundi_14Oct 
+ 1952  jps
+ 1953  start-all.sh
+ 1954  kubectl version –client
+ 1955  kubectl version
+ 1956  kubectl version –-client
+ 1957  kubectl version -client
+ 1958  kubectl version --client
+ 1959  gedit
+ 1960  gedit Tp1
+ 1961  sudo install minikube-linux-amd64 /usr/local/bin/minikube && rm minikube-linux-amd64
+ 1962  minikube version
+ 1963  minikube start
+ 1964  kubectl cluster-info
+ 1965  minikube stop
+ 1966  sudo init 0
+ 1967  minikube start
+ 1968  minikube start
+ 1969  kubectl get nodes
+ 1970  kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+ 1971  kubectl get deployments
+ 1972  kubectl proxy
+ 1973  kubectl create deployment hello-node --image=registry.k8s.io/e2e-test-images/agnhost:2.39 -- /agnhost netexec --http-port=8080
+ 1974  kubectl get pods
+ 1975  $ export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}
+ 1976  {{.metadata.name}}{{"\n"}}{{end}}') echo Name of the Pod: hello-node-66d457cb86-vdsmk
+ 1977  export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}
+ 1978  {{.metadata.name}}{{"\n"}}{{end}}') echo Name of the Pod: hello-node-66d457cb86-vdsmk
+ 1979  $ export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}
+ 1980  {{.metadata.name}}{{"\n"}}{{end}}') hello-node-66d457cb86-vdsmk
+ 1981  clear
+ 1982  kubectl expose deployment hello-node --type=LoadBalancer --port=8080
+ 1983  kubectl get services
+ 1984  service minikube hello-node
+ 1985  minikube service hello-node
+ 1986  pig
+ 1987  kubectl version
+ 1988  sudo add-apt-repository ppa:libreoffice/ppa 
+ 1989  wget https://github.com/majidevops/Linux/blob/main/server_log_large.txt
+ 1990  gedit server_log_large.txt
+ 1991  ls -ail
+ 1992  history>gito
